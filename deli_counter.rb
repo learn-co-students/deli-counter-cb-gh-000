@@ -1,7 +1,7 @@
 # Write your code here.
 def line(deli)
   message = "The line is currently"
-  if deli.size == 0
+  if deli.empty?
     message += " empty."
   else
     message += ":"
@@ -18,7 +18,7 @@ def take_a_number(deli, name)
 end
 
 def now_serving(deli)
-  if deli.size == 0
+  if deli.empty?
     puts "There is nobody waiting to be served!"
   else
     puts "Currently serving #{deli.shift}."
